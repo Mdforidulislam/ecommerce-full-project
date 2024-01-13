@@ -1,6 +1,10 @@
 import Banner from "../Components/Home/Banner/Banner";
 import Category from "../Components/Home/Category/Category1/Category";
 import DealsOffers from "../Components/Home/DealsOffer/DealsOffers";
+import ExtraService from "../Components/Home/Extra/ExtraService";
+import Inquiry from "../Components/Home/Inquiry/Inquiry";
+import RecommendedItem from "../Components/Home/Recommended/RecommendedItem";
+import Subscribe from "../Components/Home/Subscribe";
 
 
 const Home = () => {
@@ -9,6 +13,11 @@ const Home = () => {
            <Banner/>
            <DealsOffers/>
            <Category/>
+           <Category/>
+           <Inquiry/>
+           <RecommendedItem/>
+           <ExtraService/>
+           <Subscribe/>
         </div>
     );
 };

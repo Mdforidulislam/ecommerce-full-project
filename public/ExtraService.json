@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "image": "https://images.pexels.com/photos/7055905/pexels-photo-7055905.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Source from Industry Hubs",
+      "icon": "../src/assets/Vector1.png"
+    },
+    {
+      "id": 2,
+      "image": "https://images.pexels.com/photos/7621142/pexels-photo-7621142.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Customize Your Products",
+      "icon": "../src/assets/Vector2.png"
+    },
+    {
+      "id": 3,
+      "image": "https://images.pexels.com/photos/4464887/pexels-photo-4464887.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Fast, reliable shipping by ocean or air",
+      "icon": "../src/assets/Vector3.png"   
+     },
+    {
+      "id": 4,
+      "image": "https://images.pexels.com/photos/5083407/pexels-photo-5083407.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Product monitoring and inspection",
+      "icon": "../src/assets/Vector4.png"
+    }
+  ]
