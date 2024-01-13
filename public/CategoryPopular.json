@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/car.png",
+      "title": " Automobiles ",
+      "discount_percentage": 10
+    },
+    {
+      "id": 2,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/motorbike.png",
+      "title": " Motorcycle ",
+      "discount_percentage": 15
+    },
+    {
+      "id": 3,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/cpu.png",
+      "title": " Technology ",
+      "discount_percentage": 5
+    },
+    {
+      "id": 4,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/watch.png",
+      "title": " Accessories ",
+      "discount_percentage": 20
+    },
+    {
+      "id": 5,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/book.png",
+      "title": " Books, magazines ",
+      "discount_percentage": 8
+    },
+    {
+      "id": 6,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/sofa.png",
+      "title": " Home furniture ",
+      "discount_percentage": 12
+    },
+    {
+      "id": 7,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/toy.png",
+      "title": " Toys for kids ",
+      "discount_percentage": 18
+    },
+    {
+      "id": 8,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/shirt.png",
+      "title": " Clothings ",
+      "discount_percentage": 25
+    },
+    {
+      "id": 9,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/music.png",
+      "title": " Musical equipments ",
+      "discount_percentage": 15
+    },
+    {
+      "id": 10,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/ball.png",
+      "title": " Sport, health ",
+      "discount_percentage": 10
+    },
+
+    {
+      "id": 11,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/diamond.png",
+      "title": "  Jewellery  ",
+      "discount_percentage": 10
+    },
+    {
+      "id": 12,
+      "image": "https://bootstrap-ecommerce-web.netlify.app/images/icons/category-png-gray/animal.png",
+      "title": "  Animals, birds ",
+      "discount_percentage": 10
+    }
+  ]

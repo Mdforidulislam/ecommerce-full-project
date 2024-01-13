@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="bg-base-100">
       <Container>
         <div>
-          <footer className="footer p-10  text-base-content">
+          <footer className="footer p-10  text-base-content flex flex-wrap justify-between">
             <nav className="space-y-3">
                 <img src="../../assets/7.jpg"  alt="logo" />
                 <span>

@@ -20,7 +20,7 @@ const ExtraService = () => {
                   <img className="opacity-70" src={item.image} alt="" />
                   <div className="px-6 py-4 relative">
                     <div className=" flex justify-end items-center h-full w-full  box-border ">
-                      <span className=" -mt-12 absolute flex items-center justify-center rounded-full  bg-white w-[100px] h-[100px]">
+                      <span className=" -mt-12 absolute flex items-center justify-center rounded-full  bg-white w-[80px] h-[80px]">
                         <img
                           className="w-[30px] h-[30px]"
                           src={item.icon}
@@ -28,7 +28,7 @@ const ExtraService = () => {
                         />
                       </span>
                     </div>
-                    <h1>{item.title}</h1>
+                    <h1 className="mt-8">{item.title}</h1>
                   </div>
                 </div>
               </div>
