@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "image": [
+        "https://static-01.daraz.com.bd/p/2b6845e2006a7f45a81ed800ebf4c6a5.jpg_100x100.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/17fa5e3836c166d576fcc5e6b1511f4c.jpg_100x100.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/8c5b9ecd3cb7da7f375111d29c2bbc30.jpg_100x100.jpg_.webp"
+      ],
+      "name": "Realme C30s (3GB/64GB)",
+      "regularPrice": 49.99,
+      "discountPrice": 39.99,
+      "rating": 4.5,
+      "shipping": "Free Shipping",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "productType": "Electronics",
+      "material": "Metal",
+      "design": "Modern",
+      "customization": true,
+      "warranty": "1 Year",
+      "reviewTotal": 15
+    },
+    {
+      "id": 2,
+      "image": [
+        "https://static-01.daraz.com.bd/p/a5947ead10e6720ca29a905c44019748.jpg_300x0q75.webp",
+        "https://static-01.daraz.com.bd/p/a5947ead10e6720ca29a905c44019748.jpg_300x0q75.webp",
+        "https://static-01.daraz.com.bd/p/a5947ead10e6720ca29a905c44019748.jpg_300x0q75.webp"
+      ],
+      "name": "iphone 15 Pro Max",
+      "regularPrice": 79.99,
+      "discountPrice": 59.99,
+      "rating": 4.2,
+      "shipping": "Paid Shipping",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "productType": "Clothing",
+      "material": "Cotton",
+      "design": "Casual",
+      "customization": false,
+      "warranty": "No Warranty",
+      "reviewTotal": 8
+    },
+    {
+      "id": 3,
+      "image": [
+        "https://static-01.daraz.com.bd/p/8cf2d32b4ae7b4263e7e57bbbfa6aaca.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/32db05a62ebbc15d8a3094ee04d3be7a.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/fe237f9a5e2e93e6dc09d1587cc43d9f.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Infinix Smart 8(4/64GB)",
+      "regularPrice": 129.99,
+      "discountPrice": 99.99,
+      "rating": 4.8,
+      "shipping": "Free Shipping",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "productType": "Furniture",
+      "material": "Wood",
+      "design": "Classic",
+      "customization": true,
+      "warranty": "2 Years",
+      "reviewTotal": 20
+    },
+    {
+      "id": 4,
+      "image": [
+        "https://static-01.daraz.com.bd/p/4f4fd1c74b985efeab05165d448dc2ce.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d7ba9ca58f2a72cc03f4b083462b5ce4.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d22849d1bc5e54389f6fbbdcd7a28366.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Apple MacBook Air laptop",
+      "regularPrice": 39.99,
+      "discountPrice": 29.99,
+      "rating": 4.0,
+      "shipping": "Free Shipping",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "productType": "Appliances",
+      "material": "Plastic",
+      "design": "Compact",
+      "customization": false,
+      "warranty": "1 Year",
+      "reviewTotal": 12
+    },
+    {
+      "id": 5,
+      "image": [
+        "https://static-01.daraz.com.bd/p/8cf2d32b4ae7b4263e7e57bbbfa6aaca.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/32db05a62ebbc15d8a3094ee04d3be7a.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/fe237f9a5e2e93e6dc09d1587cc43d9f.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Infinix Smart 8(4/64GB)",
+      "regularPrice": 99.99,
+      "discountPrice": 79.99,
+      "rating": 4.3,
+      "shipping": "Paid Shipping",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "productType": "Outdoor Gear",
+      "material": "Nylon",
+      "design": "Sporty",
+      "customization": true,
+      "warranty": "3 Years",
+      "reviewTotal": 18
+    },
+    {
+      "id": 6,
+      "image": [
+        "https://static-01.daraz.com.bd/p/4f4fd1c74b985efeab05165d448dc2ce.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d7ba9ca58f2a72cc03f4b083462b5ce4.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d22849d1bc5e54389f6fbbdcd7a28366.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Apple MacBook Air laptop",
+      "regularPrice": 149.99,
+      "discountPrice": 119.99,
+      "rating": 4.7,
+      "shipping": "Free Shipping",
+      "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+      "productType": "Kitchenware",
+      "material": "Stainless Steel",
+      "design": "Elegant",
+      "customization": false,
+      "warranty": "2 Years",
+      "reviewTotal": 25
+    },
+    {
+      "id": 7,
+      "image": [
+        "https://static-01.daraz.com.bd/p/2b6845e2006a7f45a81ed800ebf4c6a5.jpg_100x100.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/17fa5e3836c166d576fcc5e6b1511f4c.jpg_100x100.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/8c5b9ecd3cb7da7f375111d29c2bbc30.jpg_100x100.jpg_.webp"
+      ],
+      "name": "Realme C30s (3GB/64GB)",
+      "regularPrice": 69.99,
+      "discountPrice": 54.99,
+      "rating": 4.1,
+      "shipping": "Paid Shipping",
+      "description": "Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.",
+      "productType": "Beauty Products",
+      "material": "Organic",
+      "design": "Natural",
+      "customization": true,
+      "warranty": "1 Year",
+      "reviewTotal": 10
+    },
+    {
+      "id": 8,
+      "image": [
+        "https://static-01.daraz.com.bd/p/4f4fd1c74b985efeab05165d448dc2ce.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d7ba9ca58f2a72cc03f4b083462b5ce4.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d22849d1bc5e54389f6fbbdcd7a28366.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Apple MacBook Air laptop",
+      "regularPrice": 29.99,
+      "discountPrice": 24.99,
+      "rating": 3.9,
+      "shipping": "Free Shipping",
+      "description": "Nullam id dolor id nibh ultricies vehicula ut id elit.",
+      "productType": "Home Decor",
+      "material": "Ceramic",
+      "design": "Minimalist",
+      "customization": false,
+      "warranty": "No Warranty",
+      "reviewTotal": 7
+    },
+    {
+      "id": 9,
+      "image": [
+        "https://static-01.daraz.com.bd/p/8cf2d32b4ae7b4263e7e57bbbfa6aaca.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/32db05a62ebbc15d8a3094ee04d3be7a.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/fe237f9a5e2e93e6dc09d1587cc43d9f.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Infinix Smart 8(4/64GB)",
+      "regularPrice": 89.99,
+      "discountPrice": 69.99,
+      "rating": 4.4,
+      "shipping": "Paid Shipping",
+      "description": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+      "productType": "Garden Tools",
+      "material": "Aluminum",
+      "design": "Durable",
+      "customization": true,
+      "warranty": "2 Years",
+      "reviewTotal": 14
+    },
+    {
+      "id": 10,
+      "image": [
+        "https://static-01.daraz.com.bd/p/4f4fd1c74b985efeab05165d448dc2ce.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d7ba9ca58f2a72cc03f4b083462b5ce4.jpg_750x750.jpg_.webp",
+        "https://static-01.daraz.com.bd/p/d22849d1bc5e54389f6fbbdcd7a28366.jpg_750x750.jpg_.webp"
+      ],
+      "name": "Apple MacBook Air laptop",
+      "regularPrice": 59.99,
+      "discountPrice": 49.99,
+      "rating": 4.6,
+      "shipping": "Free Shipping",
+      "description": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+      "productType": "Pet Supplies",
+      "material": "Plastic",
+      "design": "Colorful",
+      "customization": false,
+      "warranty": "1 Year",
+      "reviewTotal": 11
+    }
+  ]
+  

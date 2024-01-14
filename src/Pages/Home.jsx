@@ -5,8 +5,6 @@ import ExtraService from "../Components/Home/Extra/ExtraService";
 import Inquiry from "../Components/Home/Inquiry/Inquiry";
 import PopularCategory from "../Components/Home/PopularCategory";
 import RecommendedItem from "../Components/Home/Recommended/RecommendedItem";
-import Subscribe from "../Components/Home/Subscribe";
-
 
 const Home = () => {
     return (
@@ -19,8 +17,6 @@ const Home = () => {
            <Inquiry/>
            <RecommendedItem/>
            <ExtraService/>
-           <Subscribe/>
-
         </div>
     );
 };

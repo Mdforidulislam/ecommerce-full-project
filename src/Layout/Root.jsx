@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Header from '../Components/Home/Header';
 import Nanbar from '../Components/Home/Nanbar';
 import Footer from '../Components/Home/Footer';
+import Subscribe from '../Components/Home/Subscribe';
 
 const Root = () => {
     return (
@@ -12,6 +13,7 @@ const Root = () => {
                <Nanbar />
             </div>
             <Outlet/>
+            <Subscribe/> 
             <Footer/>
         </div>
     );
