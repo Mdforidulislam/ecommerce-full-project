@@ -9,6 +9,7 @@ import Rating from "./Ratings/Rating";
 const SearchNav = () => {
     return (
         <div className="hidden lg:block py-1">
+            {/* search funtionality */}
             <Container>
                 <div className="px-6 space-y-4">
                    <Category/>  
