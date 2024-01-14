@@ -1,9 +1,10 @@
 import React from 'react';
+import Tab from './Tab';
 
 const ProductInfo = ({item}) => {
     return (
-        <div>
-            <h1>Product info</h1>
+        <div className='flex  justify-between gap-4 h-full'>
+            <Tab/>
         </div>
     );
 };
