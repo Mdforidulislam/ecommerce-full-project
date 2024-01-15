@@ -18,10 +18,10 @@ const Banner = () => {
         <div >
            <Container>
              <div className='bg-white rounded-md md:py-4 h-full flex w-full py-2 px-3 border-2 md:px-6'>
-             <div className='px-6 list-none flex-1 hidden lg:block space-y-6 w-full'>
+             <div className='px-6 list-none flex-1 hidden lg:block space-y-6  border w-3/4 mr-3'>
                 {
                     navItem.map((item,index) =>(
-                        <li className='hover:bg-gray-100 cursor-pointer px-6 py-2 rounded-md capitalize text-xl w-full' key={index}>{item}</li>
+                        <li className='hover:bg-gray-100 cursor-pointer px-6 py-2 rounded-md capitalize text-md w-full' key={index}>{item}</li>
                     ))
                 }
               </div>

@@ -5,6 +5,7 @@ import Error from '../Error/Error';
 import Home from '../Pages/Home';
 import ProductPage from '../Pages/ProductPage';
 import SignleProduct from '../Pages/SignleProduct';
+import CheckOut from '../Pages/CheckOut';
 
 const Router =createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const Router =createBrowserRouter([
              {
                 path:'/singleProduct',
                 element:<SignleProduct/>                     
+             },
+             {
+                path:'checkout',
+                element:<CheckOut/>
              }
         ]
     }
