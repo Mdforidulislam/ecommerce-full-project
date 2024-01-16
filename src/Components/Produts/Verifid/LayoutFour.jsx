@@ -1,7 +1,9 @@
 import { RiHeartAddLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const LayoutFour = ({item}) => {
     return (
+       <Link to='/singleProduct'>
         <div className="  items-center h-full bg-white border-2 px-5  py-3">
         <div>
           <img className="md:w-[18rem] w-[12rem] h-[8rem] md:h-[12rem]" src={item.image[0]} alt="" />
@@ -57,6 +59,7 @@ const LayoutFour = ({item}) => {
           </div>
         </div>
       </div>
+       </Link>
     );
 };
 

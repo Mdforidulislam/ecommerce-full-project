@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from '../../../Container/Container';
 
 
@@ -21,7 +22,7 @@ const Banner = () => {
              <div className='px-6 list-none flex-1 hidden lg:block space-y-6  border w-3/4 mr-3'>
                 {
                     navItem.map((item,index) =>(
-                        <li className='hover:bg-gray-100 cursor-pointer px-6 py-2 rounded-md capitalize text-md w-full' key={index}>{item}</li>
+                       <Link  key={index} to='/product'> <li className='hover:bg-gray-100 cursor-pointer px-6 py-2 rounded-md capitalize text-md w-full'>{item}</li></Link>
                     ))
                 }
               </div>

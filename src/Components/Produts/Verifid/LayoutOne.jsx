@@ -1,8 +1,10 @@
 import React from "react";
 import { RiHeartAddLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const LayoutOne = ({ item }) => {
   return (
+    <Link to='/singleProduct'>
     <div className=" flex gap-4 items-center h-full bg-white border-2 px-5  py-3">
       <div>
         <img className="md:w-[18rem] w-[12rem] h-[10rem] md:h-[18rem]" src={item.image[0]} alt="" />
@@ -60,6 +62,7 @@ const LayoutOne = ({ item }) => {
         <RiHeartAddLine />
       </div>
     </div>
+    </Link>
   );
 };
 

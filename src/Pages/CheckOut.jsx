@@ -10,7 +10,9 @@ const CheckOut = () => {
             <Container>
                  <div className="md:px-6 px-3">
                     <div>
-                    <h1>My Card 3</h1>
+                     <div className="border-2 p-3 my-3 bg-white rounded-md">
+                        <h1 className="text-xl font-semibold ">My Card 3</h1>                        
+                     </div>
                     </div>
                     <div className="lg:flex block space-y-4 justify-between w-full gap-6">
                         <div className="flex-1 ">

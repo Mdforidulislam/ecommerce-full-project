@@ -1,5 +1,6 @@
 import { MdVerifiedUser } from "react-icons/md";
 import { CiGlobe } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Purchase = ({item}) => {
     return (
@@ -17,9 +18,13 @@ const Purchase = ({item}) => {
                 <li className="flex gap-3 items-center text-xl"><span><MdVerifiedUser /></span> <span>Verified Seller</span></li>
                 <li className="flex gap-3 items-center text-xl"><span><CiGlobe /></span> <span>Worldwide shipping</span></li>
             </div>
-            <div className="space-y-4">
-                <button className="bg-blue-700 px-6 py-2 text-white w-full rounded-md">Send Inquiry</button>
-                <button className="bg-white-700 font-semiblod px-6 border-2 py-2 text-black w-full rounded-md">Send Inquiry</button>
+            <div className="space-y-4 ">
+               <Link to='/checkout' className="mb-2">
+               <button className="bg-blue-700 px-6 py-2 text-white w-full rounded-md">Send Inquiry</button>
+               </Link>
+                <Link>
+                <button to='/checkout' className="bg-blue-700 px-6 py-2 text-white w-full rounded-md">Send Inquiry</button>
+                </Link>
             </div>
         </div>
     );
