@@ -4,10 +4,10 @@ import useProduct from '../../../Hooks/useProduct';
 const RelatedProduct = ({item}) => {
     const product = useProduct()
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-24'>
             {
                 product.slice(0,6).map((item,index)=>(
-                    <div key={index} className='bg-white p-6 border-2  rounded-md'>
+                    <div key={index} className='bg-white p-6 border-2 w-full h-full rounded-md'>
                         <img className='w-[6rem] h-[6rem] bg-gray-300' src={item.image[0]} alt="" /> 
                         <h1>{item.name}</h1>
                          <span>{item.regularPrice}</span>
