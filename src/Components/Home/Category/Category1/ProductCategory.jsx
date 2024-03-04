@@ -20,7 +20,7 @@ const ProductCategory = () => {
             <span>${item.discount_percentage}</span>
           </div>
           <div>
-            <img src={item.image} alt="" />
+            <img className='w-[10rem] h-[7rem]' src={item.image} alt="" />
           </div>
         </div>
         </Link>
