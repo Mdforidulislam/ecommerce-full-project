@@ -7,6 +7,7 @@ const ProductPage = () => {
     return (
         <div>
             <BreadCum/>
+            <p>hello</p>
             <div className='flex gap-4 justify-between w-full'>
                  <div className='lg:w-1/4'>
                  <SearchNav/>
