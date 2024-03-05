@@ -1,20 +1,23 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../Components/Home/Header';
 import Nanbar from '../Components/Home/Nanbar';
 import Footer from '../Components/Home/Footer';
 import Subscribe from '../Components/Home/Subscribe';
 
 const Root = () => {
+    const location = useLocation();
+    console.log(location);
+    const noHeaderFooter = location.pathname.includes('login')
     return (
         <div className='bg-gray-100 w-full h-full '>
-            <Header/>
+            {noHeaderFooter || <Header/>}
             <div className='hidden md:flex'>
-               <Nanbar />
+               { noHeaderFooter || <Nanbar />}
             </div>
             <Outlet/>
-            <Subscribe/> 
-            <Footer/>
+            {noHeaderFooter || <Subscribe/>} 
+           {noHeaderFooter || <Footer/>}
         </div>
     );
 };
