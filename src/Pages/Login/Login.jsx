@@ -8,10 +8,13 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+    
   const captchaRef = useRef(null);
   const [disable,setDisable] = useState(true);
 
-  const {signIn} = useContext(AuthContext)
+  const {signIn,user} = useContext(AuthContext);
+
+  const authorization = "admin";
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -40,6 +43,8 @@ const Login = () => {
         setDisable(true)
     }
   };
+
+
 
   return (
     <div className="hero min-h-screen bg-base-200">
