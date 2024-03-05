@@ -8,6 +8,11 @@ import SignleProduct from '../Pages/SignleProduct';
 import CheckOut from '../Pages/CheckOut';
 import Login from '../Pages/Login/Login';
 import SignUp from '../Pages/SignUp/SignUp';
+import Dashboard from '../Layout/Dashboard';
+import Admin from '../Layout/Dashboard/Admin/Admin';
+import Seller from '../Layout/Dashboard/Seller/Seller';
+import User from '../Layout/Dashboard/User/User';
+import ValideUser from '../Auth/ValideUser';
 
 const Router =createBrowserRouter([
     {
@@ -41,6 +46,24 @@ const Router =createBrowserRouter([
              },
             
         ]
+    },
+    {
+      path:'/dashboard',
+      element:<Dashboard/>,
+      children:[
+         {
+            path:'/dashboard/admin',
+            element:<ValideUser><Admin/></ValideUser>
+         },
+         {
+            path:'/dashboard/sellar',
+            element:<ValideUser><Seller/></ValideUser>
+         },
+         {
+            path:"/dashboard/user",
+            element:<ValideUser><User/></ValideUser>
+         }
+      ]
     }
 ])
 
