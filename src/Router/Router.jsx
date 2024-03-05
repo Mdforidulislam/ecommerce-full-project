@@ -6,8 +6,6 @@ import Home from '../Pages/Home';
 import ProductPage from '../Pages/ProductPage';
 import SignleProduct from '../Pages/SignleProduct';
 import CheckOut from '../Pages/CheckOut';
-import DashBoard from '../Layout/DashBoard';
-import Cart from '../Pages/DashBoardPages/Cart';
 import Login from '../Pages/Login/Login';
 import SignUp from '../Pages/SignUp/SignUp';
 
@@ -41,17 +39,7 @@ const Router =createBrowserRouter([
                 path:'signUp',
                 element:<SignUp></SignUp>
              },
-             {
-                path: 'dashBoard',
-                element: <DashBoard></DashBoard>,
-                children:[
-                    {
-                        path:'cart',
-                        element:<Cart></Cart>
-                    }
-                ]
-                
-             }
+            
         ]
     }
 ])
