@@ -9,6 +9,7 @@ import CheckOut from '../Pages/CheckOut';
 import DashBoard from '../Layout/DashBoard';
 import Cart from '../Pages/DashBoardPages/Cart';
 import Login from '../Pages/Login/Login';
+import SignUp from '../Pages/SignUp/SignUp';
 
 const Router =createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const Router =createBrowserRouter([
              {
                 path:'login',
                 element:<Login></Login>
+             },
+             {
+                path:'signUp',
+                element:<SignUp></SignUp>
              },
              {
                 path: 'dashBoard',
