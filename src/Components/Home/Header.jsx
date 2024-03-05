@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../Container/Container";
 import logo from "../../assets/logo-colored.png";
 import NavItem from "./NavItem";
@@ -111,8 +112,11 @@ const Header = () => {
                   fill="#1C1C1C"
                 />
               </svg>
+              <Link to="/dashBoard/cart">
               <span>Card</span>
+              </Link>
             </div>
+           <Link to="/login"> <div>Login</div></Link>
           </div>
         </div>
         <div className="md:hidden">

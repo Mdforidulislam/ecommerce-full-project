@@ -7,6 +7,8 @@ import ProductPage from '../Pages/ProductPage';
 import SignleProduct from '../Pages/SignleProduct';
 import CheckOut from '../Pages/CheckOut';
 import DashBoard from '../Layout/DashBoard';
+import Cart from '../Pages/DashBoardPages/Cart';
+import Login from '../Pages/Login/Login';
 
 const Router =createBrowserRouter([
     {
@@ -31,11 +33,16 @@ const Router =createBrowserRouter([
                 element:<CheckOut/>
              },
              {
+                path:'login',
+                element:<Login></Login>
+             },
+             {
                 path: 'dashBoard',
                 element: <DashBoard></DashBoard>,
                 children:[
                     {
-
+                        path:'cart',
+                        element:<Cart></Cart>
                     }
                 ]
                 
