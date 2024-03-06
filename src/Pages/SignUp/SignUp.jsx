@@ -1,20 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { data } from 'autoprefixer';
 
 const SignUp = () => {
-  const { register, handleSubmit,  formState: { errors } } = useForm();
-  const {createUser} = useContext(AuthContext);
-console.log(createUser);
-  const onSubmit = data => {
-    console.log(data)};
-    createUser(data.email,data.password)
-    .then(result=>{
-      const loggedUser = result.user;
-      console.log(loggedUser);
-    })
-    
+  const [userData, setUserData] = useState({});
+const { register, handleSubmit, formState: { errors } } = useForm();
+const { createUser } = useContext(AuthContext);
+
+const onSubmit = data => {
+  setUserData(data);
+};
+
+
+useEffect(() => {
+  if (userData.email && userData.password) {
+    createUser(userData.email, userData.password)
+      .then(result => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        // Update any other state or perform actions here
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+}, [userData]);
 
     return (
         <div className="hero min-h-screen bg-base-200">
