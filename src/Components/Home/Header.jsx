@@ -2,8 +2,25 @@ import { Link } from "react-router-dom";
 import Container from "../../Container/Container";
 import logo from "../../assets/logo-colored.png";
 import NavItem from "./NavItem";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
+  const {user,logout} = useContext(AuthContext);
+
+  const handleLogout = ()=>{
+    logout()
+    .then(()=>{})
+    .catch(error =>console.log(error))
+  }
+
+  {
+    user? <>
+    <button onClick={handleLogout} className=" btn btn-ghost">Logout</button>
+    </>
+:
+<><Link to ="/login">Login</Link></>
+  }
   return (
     <div className=" border-b-2 border-gray-200 bg-white ">
       <Container>

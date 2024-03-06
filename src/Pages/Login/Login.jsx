@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
     
-  const {signIn,user} = useContext(AuthContext);
+  const {signIn} = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
