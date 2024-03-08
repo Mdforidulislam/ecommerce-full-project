@@ -7,17 +7,16 @@ import Subscribe from '../Components/Home/Subscribe';
 
 const Root = () => {
     const location = useLocation();
-    console.log(location);
     const noHeaderFooter = location.pathname.includes('login') || location.pathname.includes('signUp')
     return (
         <div className='bg-gray-100 w-full h-full '>
-            {noHeaderFooter || <Header/>}
+            { <Header/>}
             <div className='hidden md:flex'>
                { noHeaderFooter || <Nanbar />}
             </div>
             <Outlet/>
             {noHeaderFooter || <Subscribe/>} 
-           {noHeaderFooter || <Footer/>}
+           { <Footer/>}
         </div>
     );
 };

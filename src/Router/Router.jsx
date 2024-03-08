@@ -33,15 +33,15 @@ const Router =createBrowserRouter([
                 element:<SignleProduct/>                     
              },
              {
-                path:'checkout',
+                path:'/checkout',
                 element:<CheckOut/>
              },
              {
-                path:'login',
-                element:<Login></Login>
+                path:'/login',
+                element: <ValideUser><Login/></ValideUser>
              },
              {
-                path:'signUp',
+                path:'/signUp',
                 element:<SignUp></SignUp>
              },
             
@@ -53,15 +53,15 @@ const Router =createBrowserRouter([
       children:[
          {
             path:'/dashboard/admin',
-            element:<ValideUser><Admin/></ValideUser>
+            element:<ValideUser userType="admin"><Admin/></ValideUser>
          },
          {
             path:'/dashboard/sellar',
-            element:<ValideUser><Seller/></ValideUser>
+            element:<ValideUser userType="seller"><Seller/></ValideUser>
          },
          {
             path:"/dashboard/user",
-            element:<ValideUser><User/></ValideUser>
+            element:<ValideUser userType="user"><User/></ValideUser>
          }
       ]
     }

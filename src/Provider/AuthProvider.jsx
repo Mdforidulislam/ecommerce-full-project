@@ -1,49 +1,63 @@
 import { createContext, useEffect, useState } from "react";
-import {   signInWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, getAuth, updateProfile, createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, getAuth, updateProfile, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "../firebase/firebase.config";
+import useRegisterUser from "../Hooks/useRegisterUser";
+
 
 export const AuthContext = createContext(null)
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider()
-const AuthProvider = ({children}) => {
-    const [user,setUser]=useState(null)
-    const [loading,setLoading]=useState(true)
+const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState({})
+    const [loading, setLoading] = useState(true)
 
-    const createUser = (email,password) =>{
+
+    const createUser = (email, password) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth,email,password)
+        return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const signIn = (email,password)=>{
+    const signIn = (email, password) => {
         setLoading(true)
-        return signInWithEmailAndPassword(auth,email,password)
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
-    const googleSignIn = ()=>{
-        return signInWithPopup(auth,googleProvider)
+    const googleSignIn = () => {
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider)
     }
 
-    const logout =()=>{
+    const logout = () => {
         setLoading(true)
         return signOut(auth)
     }
 
-    useEffect(()=>{
-        const unSubscribe = onAuthStateChanged(auth,currentUser=>{
-            setUser(currentUser)
-            setLoading(false)
-        })
-        return ()=>{
-            unSubscribe()
-        }
-    },[])
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            // Only update user state if currentUser is different from the existing user state
+            if (JSON.stringify(currentUser) !== JSON.stringify(user)) {
+                setUser(currentUser);
+            }
+            setLoading(false);
+        });
+        return () => {
+            unSubscribe();
+        };
+    }, [user]);
 
-    const updateUserProfile =(name,photo) =>{
+    // calling the user register hook
+    const register = useRegisterUser(user);
+
+    console.log(register);
+
+
+
+    const updateUserProfile = (name, photo) => {
         return updateProfile(auth.currentUser, {
-             displayName:name, photoURL: photo
-           })
-           
-     }
+            displayName: name, photoURL: photo
+        })
+
+    }
 
     const authInfo = {
         user,
