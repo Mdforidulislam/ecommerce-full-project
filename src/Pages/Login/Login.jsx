@@ -39,6 +39,7 @@ const Login = () => {
                 name="email"
                 placeholder="email"
                 className="input input-bordered"
+                autoComplete="email"
                 required
               />
             </div>
@@ -46,13 +47,7 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
+              <input type="password" name="password" autoComplete="current-password" />
               <label className="label">
                  <p>Forgot password?</p>
               </label>

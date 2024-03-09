@@ -13,6 +13,7 @@ import Admin from '../Layout/Dashboard/Admin/Admin';
 import Seller from '../Layout/Dashboard/Seller/Seller';
 import User from '../Layout/Dashboard/User/User';
 import ValideUser from '../Auth/ValideUser';
+import AdminValid from '../Auth/AdminValid';
 
 const Router =createBrowserRouter([
     {
@@ -53,15 +54,15 @@ const Router =createBrowserRouter([
       children:[
          {
             path:'/dashboard/admin',
-            element:<ValideUser userType="admin"><Admin/></ValideUser>
+            element:<AdminValid><Admin/></AdminValid>
          },
          {
             path:'/dashboard/sellar',
-            element:<ValideUser userType="seller"><Seller/></ValideUser>
+            element:<AdminValid><Seller/></AdminValid>
          },
          {
             path:"/dashboard/user",
-            element:<ValideUser userType="user"><User/></ValideUser>
+            element:<AdminValid><User/></AdminValid>
          }
       ]
     }
