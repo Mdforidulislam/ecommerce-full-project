@@ -19,7 +19,7 @@ const Dashboard = () => {
                 </Link>
                 <ul>
                     <li className='p-4 text-xl hover:bg-[#2c7feb] hover:text-white rounded-lg'>
-                        <NavLink to='/dashboard/profile'>
+                        <NavLink to='/dashboard/user/profile'>
                             Profile
                         </NavLink>
                     </li>

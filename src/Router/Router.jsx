@@ -66,7 +66,7 @@ const Router = createBrowserRouter([
             element: <AdminValid><User /></AdminValid>
          },
          {
-            path: "/dashboard/profile",
+            path: "/dashboard/user/profile",
             element: <Profile> </Profile>
          }
       ]
