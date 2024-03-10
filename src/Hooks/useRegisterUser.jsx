@@ -12,7 +12,7 @@ const useRegisterUser = (user) => {
             const userName = user.displayName || (user.email && user.email.split('@')[0]);
             const userInfo = { userName: userName, userEmail: user.email, userType: 'user' };
 
-            axios.post(`http://localhost:5000/register`, userInfo)
+            axios.post(`https://server-site-beta.vercel.app/register`, userInfo)
                 .then(res => {
                     console.log('Response from server:', res.data);
                     setRegister(res.data);
