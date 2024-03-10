@@ -15,7 +15,7 @@ const Product = () => {
                 product.slice(0,5).map((item,index)=>(
                    <Link key={index} to='/product'>
                     <div  className="bg-white border-2 p-4">
-                        <img src={item.image} alt="image" />
+                        <img className="w-full h-full" src={item.image} alt="image" />
                         <h1 className="capitalize">{item.title}</h1>
                         <span className="text-red-500 font-bold">-{item.discount_percentage}%</span>
                     </div>
