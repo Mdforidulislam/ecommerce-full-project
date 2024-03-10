@@ -7,6 +7,8 @@ const ValideUser = ({ children }) => {
     const { user } = useContext(AuthContext);
     const navigate = useNavigate();
     const [userData] = useGetRegisterdata(user?.email);
+
+    console.log(userData);
     const userRole = userData?.result?.userType;
 
     useEffect(() => {
