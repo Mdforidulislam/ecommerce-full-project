@@ -22,7 +22,7 @@ const ValideUser = ({ children }) => {
                     navigate('/dashboard/seller');
                     break;
                 case 'user':
-                    navigate('/dashboard/user');
+                    navigate('/dashboard/user/profile');
                     break;
                 default:
                     navigate('/login');
