@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const ValideUser = ({ children }) => {
     const { user } = useContext(AuthContext);
     const navigate = useNavigate();
-    const [userData] = useGetRegisterdata(user.email);
+    const [userData] = useGetRegisterdata(user?.email);
     const userRole = userData?.result?.userType;
 
     useEffect(() => {
