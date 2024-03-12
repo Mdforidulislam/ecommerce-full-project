@@ -34,7 +34,7 @@ const SignUp = () => {
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'OK'
               });
-              regiNavi(`/dashboard/profile`)
+              regiNavi(`/dashboard/user/profile`)
 
             })
             .catch(error => {
