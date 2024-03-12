@@ -16,29 +16,64 @@ const Profile = () => {
             .catch((error) => console.error(error));
     }
     return (
-        <div>
-            <div className="max-w-4xl mx-auto md:my-36 md:pl-[450px]">
-                <h1 className="text-3xl font-semibold text-center mb-12">Profile Information</h1>
-                <img className='max-w-500 mx-auto my-5 h-[120px]' src={userPhoto} alt="" />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
-                    <div>
 
-                        <h2 className="text-lg font-medium mb-2">Username</h2>
-                        <p className="mb-4">Mouri Chowdhury</p>
-                        <h2 className="text-lg font-medium mb-2">Phone Number</h2>
-                        <p className="mb-4">014857474</p>
-                        <h2 className="text-lg font-medium mb-2">Age</h2>
-                        <p className="mb-4">24</p>
-                        <h2 className="text-lg font-medium mb-2">Gender</h2>
-                        <p>Female</p>
-                    </div>
-                    <div>
-                        <h2 className="text-lg font-medium mb-2">Email Address</h2>
-                        <p className="mb-4">mourichow206@gmail.com</p>
-                        <h2 className="text-lg font-medium mb-2">Address</h2>
-                        <p className="mb-4">sjanfiabf</p>
+        <div>
+            <div className="divide-y max-w-2xl mx-auto divide-gray-200">
+                <div className="py-4">
+                    <h2 className="mb-2 lg:text-3xl text-lg my-5 text-center font-semibold">Profile Information</h2>
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                            <span className="relative mt-5 flex h-48 w-48 shrink-0 overflow-hidden rounded-full">
+                                <img className="aspect-square h-full w-full" alt="" src={userPhoto} />
+                            </span>
+                        </div>
                     </div>
                 </div>
+
+                <div className="py-4">
+                    <h2 className="mb-2 text-lg font-semibold">Username</h2>
+                    <div className="flex justify-between">
+                        <span>Moury Chowdhury</span>
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row justify-between">
+                    <div className="py-4">
+                        <h2 className="mb-2 text-lg font-semibold">Phone Number</h2>
+                        <div className="flex justify-between">
+                            <span>0154894685415</span>
+                        </div>
+                    </div>
+
+                    <div className="py-4">
+                        <h2 className="mb-2 text-lg font-semibold">Email Address</h2>
+                        <div className="space-y-2">
+                            <div className="flex items-center justify-between">
+                                <span>mouu@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="py-4">
+                    <h2 className="mb-2 text-lg font-semibold">Age</h2>
+                    <div className="flex justify-between">
+                        <span>24</span>
+                    </div>
+                </div>
+                <div className="py-4">
+                    <h2 className="mb-2 text-lg font-semibold">Gender</h2>
+                    <div className="flex justify-between">
+                        <span>Female</span>
+                    </div>
+                </div>
+                <div className="py-4">
+                    <h2 className="mb-2 text-lg font-semibold">Address</h2>
+                    <div className="flex justify-between">
+                        <span>Dhaka</span>
+                    </div>
+                </div>
+
                 <div className="mt-8 md:flex justify-between text-center">
                     <button className="bg-[#2563EB] hover:bg-[#2563EB] text-white btn w-full md:w-auto">Update Profile</button>
                     <button className='btn bg-[#2563EB] hover:bg-[#2563EB] text-white' onClick={handleLogout}>
@@ -46,12 +81,7 @@ const Profile = () => {
                     </button>
 
                 </div>
-
-                {/* <button className='btn' onClick={handleLogout}>
-                    Log Out
-                </button> */}
             </div>
-
         </div>
     );
 };
